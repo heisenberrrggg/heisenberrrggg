@@ -1,0 +1,35 @@
+# A faulty calculator: We need to return wrong answers for the following operations
+
+# 41*3 should return 455
+# 56+9 should return 77
+# 56/4 should return 4
+# Rest of the operations should function properly
+
+#Step 1: Taking user input(*,+,/)
+
+user_operator = input("Which operation you want to use? ")
+
+#Step 2: Taking input number 1
+
+num1 = int(input("Choose your number: "))
+
+#Step 3: Taking input number 2
+
+num2 = int(input("Choose your second number: "))
+
+#Using if and elif statements:
+
+if user_operator == "*" and num1 == 41 and num2 == 3:
+    print("The result is 455")
+elif user_operator == "+" and num1 == 56 and num2 == 9:
+    print("The result is 77")
+elif user_operator == "/" and num1 == 56 and num2 == 4:
+    print("The result is 4")
+elif user_operator == "*":
+    print(num1*num2)
+elif user_operator == "+":
+    print(num1+num2)
+elif user_operator == "/":
+    print(num1//num2)
+
+# Any suggestions to the followig code is welcome. Thank you. 
