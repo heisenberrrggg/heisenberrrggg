@@ -1,0 +1,17 @@
+def computepay(hours, rate):
+    if hours <= 40:
+        pay = hours * rate
+    else:
+        regular_pay = 40 * rate
+        overtime_pay = (hours - 40) * (rate * 1.5)
+        pay = regular_pay + overtime_pay
+    return pay
+#Asking user to input data
+hours_str = input("Enter hours: ")
+rate_str = input("Enter rate per hour: ")
+#Converting data to float point integer and assinging to variable 
+hours = float(hours_str)
+rate = float(rate_str)
+#Calling the function
+gross_pay = computepay(hours, rate)
+print("Pay", gross_pay)
